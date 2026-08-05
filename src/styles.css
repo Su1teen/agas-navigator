@@ -61,6 +61,36 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@theme inline {
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+@utility glass {
+  background-color: color-mix(in oklab, var(--color-card) 68%, transparent);
+  backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid color-mix(in oklab, white 55%, var(--color-border));
+  box-shadow: var(--shadow-glass);
+}
+
+@utility glass-panel {
+  background-color: color-mix(in oklab, var(--color-card) 80%, transparent);
+  backdrop-filter: blur(28px) saturate(170%);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-glass);
+}
+
+@utility num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(0.978 0.002 247);
