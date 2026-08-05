@@ -40,7 +40,7 @@ export type Product = {
 const MONTHS_6 = ["Feb", "Mar", "Apr", "May", "Jun", "Jul"];
 
 function series(base: number, deltas: number[]) {
-  return MONTHS_6.map((month, i) => ({ month, units: Math.max(0, base + deltas[i]) }));
+  return MONTHS_6.map((month, i) => ({ month, units: Math.max(0, base + (deltas[i] ?? 0)) }));
 }
 
 export const PRODUCTS: Product[] = [
