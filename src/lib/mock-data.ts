@@ -490,7 +490,7 @@ export const STAGED_ROWS: StagedRow[] = [
   },
   {
     id: 5,
-    name: "Aeris Wall Panel 7\"",
+    name: 'Aeris Wall Panel 7"',
     sku: "SGK-SH-1310",
     category: "Smart Home",
     cogs: 88,
