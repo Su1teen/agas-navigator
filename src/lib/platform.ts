@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useUi, displayMoney } from "./ui";
 export const API =
-  import.meta.env["VITE_AGAS_API_URL"] || (import.meta.env.DEV ? "http://localhost:4000" : "");
+  import.meta.env["VITE_AGAS_API_URL"] ||
+  (import.meta.env.DEV ? "http://localhost:4000" : "https://agas.kz");
 export type User = {
   guest?: boolean;
   id: string;
